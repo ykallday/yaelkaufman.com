@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url(./css/tokens.css);
+@import url(./css/colors.module.css);
+@import url(./css/typography.module.css);
+@import url(./css/theme.light.css) (prefers-color-scheme: light);
+@import url(./css/theme.dark.css) (prefers-color-scheme: dark);
+
+/*Overall*/
+
+.App {
+  text-align: center;
+  color:black;
+  /* display:flex; */
+  justify-content:center;
+  font-family:Quicksand, sans-serif;
+  background: url(./assets/background-01.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+header{
+  margin:0 auto;
+}
+
+
+main{
+  height:90vh;
+}
+
+/*Nav---------------------------------------------------*/
+
+#main-Nav{
+  padding-top:50px;
+  padding-bottom:20px;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  letter-spacing:1px;
+  height:80px;
+  border-top-right-radius:30px;
+  border-top-left-radius:30px;
+  background-color: var(--md-sys-color-primary);
+  width: 100vw;
+  opacity:.9;
+  margin-bottom:50px;
+}
+
+
+#main-Nav a{
+  text-decoration:none;
+}
+
+#main-name{
+  margin: 0 auto;
+  font-size:2em;
+  letter-spacing:.5em;
+  font-weight:400;
+  width:fit-content;
+  color: var(--md-sys-color-primary-container);
+  padding-bottom:20px;
+}
+
+/*HomeGrid---------------------------------------------*/
+.gridWrapper{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.gridWrapper div img{
+  align-items:center;
+  width: auto;
+  max-width:20vw;
+  padding:20px;
+  margin: 0 auto;
+  margin: 30px;
+  margin-bottom:20px;
+}
+
+.gridWrapper div img:hover{
+  scale:calc(1.2);
+  background-color: var(--md-sys-color-secondary-container);
+  opacity:.6;
+  /* border: 2px solid black; */
+  border-radius:30px;
+}
+
+/*Footer---------------------------------------------*/
+
+#footer{
+  height:100px;
+  width:100vw;
+  background-color:black;
+  margin-top: 40px;
+}
+
+
+
+/*****Buttons*****/
+
+
+
+.navigation-btn:hover,
+#main-Nav button:hover{
+  scale: calc(1.2)
+}
+
+#main-Nav button:active,
+.navigation-btn:active{
+  box-shadow: 3px 3px 8px gray;
+  transform: scale(.98);
+  opacity: 0.7;
+}
+
+.navigation-btn, 
+#main-Nav button{
+  text-transform: uppercase;
+  font-family: Quicksand, sans-serif;
+  font-size: .8vw;
+  font-weight:600;
+  border-radius: 10px;
+  letter-spacing: .5em;
+  margin-bottom:30px;
+  padding:.5em;
+  border: 1px solid var(--md-sys-color-outline);
+  background-color: var(--md-sys-color-tertiary-container);
+  color: var(--md-sys-color-on-tertiary-container);
+  box-shadow: 1px 1px 3px lightgray;
+  opacity:.8;
+}
+
+
+#main-Nav button{
+  width:100%;
+  font-size:1vw;
+  box-shadow: 1px 1px 3px gray;
+  color: var(--md-sys-color-on-primary-container);
+  text-decoration:none;
+  font-weight:800;
+  background-color: var(--md-sys-color-primary-container);
+}
