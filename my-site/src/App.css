@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 @import url(./css/tokens.css);
 @import url(./css/colors.module.css);
 @import url(./css/typography.module.css);
@@ -13,16 +13,19 @@
   color:black;
   /* display:flex; */
   justify-content:center;
-  font-family:Quicksand, sans-serif;
+  font-family:Manrope, sans-serif;
   background: url(./assets/background-01.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
   
 }
 header{
   margin:0 auto;
+  width: 80vw;
+  padding-top:20px;
 }
 
 
@@ -40,10 +43,11 @@ main{
   align-items: center;
   letter-spacing:1px;
   height:80px;
+  border-radius:30px;
   border-top-right-radius:30px;
   border-top-left-radius:30px;
   background-color: var(--md-sys-color-primary);
-  width: 100vw;
+  /* width: 100vw; */
   opacity:.9;
   margin-bottom:50px;
 }
@@ -56,8 +60,8 @@ main{
 #main-name{
   margin: 0 auto;
   font-size:2em;
-  letter-spacing:.5em;
-  font-weight:400;
+  letter-spacing:.3em;
+  font-weight:500;
   width:fit-content;
   color: var(--md-sys-color-primary-container);
   padding-bottom:20px;
@@ -73,7 +77,7 @@ main{
 .gridWrapper div img{
   align-items:center;
   width: auto;
-  max-width:20vw;
+  max-width:25vw;
   padding:20px;
   margin: 0 auto;
   margin: 30px;
@@ -87,17 +91,141 @@ main{
   /* border: 2px solid black; */
   border-radius:30px;
 }
+/*AboutMe---------------------------------------------*/
+#about button{
+  text-decoration:none;
+  background-color:var(--md-sys-color-surface);
+  border-radius:10px;
+  padding:0 3px;
+  color: var(--md-sys-color-tertiary);
+  font-family:Manrope, sans-serif;
+  font-weight:900;
+  
+}
 
-/*Footer---------------------------------------------*/
+#about button:hover{
+  scale: calc(1.1);
+ 
+}
 
-#footer{
-  height:100px;
-  width:100vw;
-  background-color:black;
-  margin-top: 40px;
+/*Resume---------------------------------------------*/
+
+#resume, #about, #contact-page, #project-page{
+  border-radius:30px;
+  margin: 30px;
+  padding: 30px;
+  background-color: var(--md-sys-color-surface-variant);
+  color: var(--md-sys-color-tertiary);
+  letter-spacing:.1em;
+}
+#resume h1, #about h1, #contact-page h1, #project-page h1{
+  letter-spacing: 0.5em;
+  font-weight:800;
+}
+
+.res-about{
+  padding:0 100px;
+  text-align:left;
+}
+
+#resume a{
+  color: var(--md-sys-color-primary);
+  border-radius:10px;
+}
+#resume a:hover{
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  padding:3px;
+}
+
+#resume .bullet{
+  font-weight:bold;
+}
+#resume ul{
+  padding:0 100px;
+  text-align:left;
+}
+#resume h4{
+  margin-bottom:0px;
+}
+
+.res-title{
+  background-color: rgba(255,255,255,.5);
+  width:fit-content;
+  margin-left: 5%;
+  border-radius:10px;
+  padding:5px;
+}
+
+.res-work-title{
+  text-align:left;
+  margin-left:8%;
+  line-height:10%;
+  margin-bottom:0px;
+}
+/*Contact-------*/
+.contact-grid{
+  display:grid;
+  grid-template-columns: repeat(2,50%);
+  padding:20px;
+  grid-gap:30px;
+  justify-content:center;
+}
+.contact-grid div{
+  background-color:var(--md-sys-color-on-secondary);
+  border-radius:30px;
+  padding:40px;
+}
+.contact-grid div:hover{
+  scale:calc(1.05)
+}
+
+.contact-grid a{
+  text-decoration:none;
+  color:var(--md-sys-color-on-surface);
+  font-weight:500;
 }
 
 
+/*-Projects-----------*/
+.project-grid{
+  display:grid;
+  width: 80vw;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  padding:20px;
+  grid-gap:30px;
+  justify-content:center;
+  border-radius:30px;
+  margin: 0 auto;
+  grid-gap: 40px;
+ 
+}
+.project-grid div{
+  width:90%;
+  height:90%;
+  opacity:1;
+  background-color:rgba(255,255,255,.5);
+  box-shadow: 1px 1px 2px gray;
+  padding:20px;
+  border-radius:30px;
+  
+}
+
+.project-grid div:hover{
+  border: 2px solid white;
+  scale: calc(1.1)
+}
+.project-grid a{
+  text-decoration:none;
+  color: var(--md-sys-color-tertiary);
+}
+
+.project-grid img{
+   border-radius:30px;
+   max-width:80%;
+   padding:2px;
+}
 
 /*****Buttons*****/
 
@@ -105,7 +233,7 @@ main{
 
 .navigation-btn:hover,
 #main-Nav button:hover{
-  scale: calc(1.2)
+  scale: calc(1.2);
 }
 
 #main-Nav button:active,
@@ -118,7 +246,7 @@ main{
 .navigation-btn, 
 #main-Nav button{
   text-transform: uppercase;
-  font-family: Quicksand, sans-serif;
+  font-family: Manrope, sans-serif;
   font-size: .8vw;
   font-weight:600;
   border-radius: 10px;
@@ -135,7 +263,7 @@ main{
 
 #main-Nav button{
   width:100%;
-  font-size:1vw;
+  font-size:.8vw;
   box-shadow: 1px 1px 3px gray;
   color: var(--md-sys-color-on-primary-container);
   text-decoration:none;
