@@ -19,6 +19,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  min-height:100vh;
+  max-height:100%;
 
   
 }
@@ -30,7 +32,7 @@ header{
 
 
 main{
-  height:90vh;
+  height:100vh;
 }
 
 /*Nav---------------------------------------------------*/
@@ -77,12 +79,13 @@ main{
 .gridWrapper div img{
   align-items:center;
   width: auto;
-  max-width:25vw;
+  max-width:35vw;
   padding:20px;
   margin: 0 auto;
   margin: 30px;
   margin-bottom:20px;
 }
+
 
 .gridWrapper div img:hover{
   scale:calc(1.2);
@@ -270,3 +273,139 @@ main{
   font-weight:800;
   background-color: var(--md-sys-color-primary-container);
 }
+
+
+/******BREAKPOINTS******/
+@media only screen and (max-width: 700px) {
+      
+  #main-Nav{
+      padding-top:50px;
+      display:inline;
+      padding-bottom:40px;
+      align-items: center;
+      letter-spacing:1px;
+      height:80px;
+      border-radius:30px;
+      background-color: transparent;
+      /* width: 100vw; */
+      opacity:.9;
+      margin-bottom:50px;
+      font-size:20px;
+  }
+    #main-Nav button{
+      height:30px;
+      font-size:10px;
+    }
+  
+    #main-name{
+        margin: 0 auto;
+        font-size:1em;
+        letter-spacing:.3em;
+        font-weight:500;
+        width:100%;
+        color: var(--md-sys-color-primary-container);
+        padding-bottom:0px;
+        padding:5px;
+        margin-bottom:20px;
+        background-color:var(--md-sys-color-on-primary-container);
+      }
+    
+
+    #resume, #about, #contact-page, #project-page{
+      border-radius:30px;
+      margin: 10px;
+      padding: 20px;
+      background-color: var(--md-sys-color-surface-variant);
+      color: var(--md-sys-color-tertiary);
+      letter-spacing:.1em;
+    }
+    .res-about{
+      padding:0 0px;
+      text-align:center;
+    }
+    
+    #resume a{
+      color: var(--md-sys-color-primary);
+      border-radius:10px;
+    }
+    #resume a:hover{
+      background-color: var(--md-sys-color-primary);
+      color: var(--md-sys-color-on-primary);
+      padding:3px;
+    }
+    
+    #resume .bullet{
+      font-weight:bold;
+    }
+    #resume ul{
+      padding:0 0px;
+      text-align:left;
+    }
+    #resume h4{
+      margin-bottom:0px;
+    }
+    
+    .res-title{
+      background-color: rgba(255,255,255,.5);
+      width:fit-content;
+      margin-left: 5%;
+      border-radius:10px;
+      padding:5px;
+    }
+    
+    .res-work-title{
+      text-align:left;
+      margin-left:0%;
+      line-height:10%;
+      margin-bottom:0px;
+    }
+  }
+@media only screen and (max-width: 500px) {
+
+    .gridWrapper div img{
+      align-items:center;
+      width: auto;
+      max-width:80vw;
+      padding:20px;
+      margin: 0 auto;
+      margin: 30px;
+      margin-bottom:20px;
+    }
+
+    .project-grid{
+      display:grid;
+      width: 70vw;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      padding:5px;
+      grid-gap:30px;
+      margin: 0 auto;
+      justify-content:center;
+      border-radius:30px;
+ 
+     
+    }
+    .project-grid div{
+      width:90%;
+      height:90%;
+      opacity:1;
+      background-color:rgba(255,255,255,.5);
+      box-shadow: 1px 1px 2px gray;
+      padding:20px;
+      border-radius:30px;
+      
+    }
+    .contact-grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      padding:20px;
+      grid-gap:30px;
+      justify-content:center;
+    }
+    
+ }
+
+     
+
+  
+
