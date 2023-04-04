@@ -11,16 +11,13 @@
 .App {
   text-align: center;
   color:black;
-  /* display:flex; */
   justify-content:center;
   font-family:Manrope, sans-serif;
-  background: url(./assets/background-01.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height:100vh;
-  max-height:100%;
+  background: url(./assets/background-01.png) center center; 
+  background-size:cover; 
+  background-repeat: repeat-y;
+  min-height: 100vh;
+  /* max-height: 100%; */
 
   
 }
@@ -30,10 +27,11 @@ header{
   padding-top:20px;
 }
 
-
 main{
-  height:100vh;
+  padding-bottom:30px;
 }
+
+
 
 /*Nav---------------------------------------------------*/
 
@@ -75,11 +73,13 @@ main{
   flex-wrap:wrap;
   justify-content:center;
 }
-
+.gridWrapper div{
+  width: 35%;
+}
 .gridWrapper div img{
   align-items:center;
   width: auto;
-  max-width:35vw;
+  max-width:25vw;
   padding:20px;
   margin: 0 auto;
   margin: 30px;
@@ -115,14 +115,17 @@ main{
 
 #resume, #about, #contact-page, #project-page{
   border-radius:30px;
-  margin: 30px;
+  margin: 0 auto;
+  margin-top: 30px;
   padding: 30px;
   background-color: var(--md-sys-color-surface-variant);
   color: var(--md-sys-color-tertiary);
   letter-spacing:.1em;
+  width:75%;
+  
 }
 #resume h1, #about h1, #contact-page h1, #project-page h1{
-  letter-spacing: 0.5em;
+  letter-spacing: .2em;
   font-weight:800;
 }
 
@@ -173,11 +176,13 @@ main{
   padding:20px;
   grid-gap:30px;
   justify-content:center;
+
 }
 .contact-grid div{
   background-color:var(--md-sys-color-on-secondary);
   border-radius:30px;
   padding:40px;
+  
 }
 .contact-grid div:hover{
   scale:calc(1.05)
@@ -193,7 +198,7 @@ main{
 /*-Projects-----------*/
 .project-grid{
   display:grid;
-  width: 80vw;
+  width: 75%;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(2,1fr);
   padding:20px;
@@ -235,17 +240,24 @@ main{
 
 
 .navigation-btn:hover,
+.navigation-btn a:hover,
 #main-Nav button:hover{
   scale: calc(1.2);
 }
 
 #main-Nav button:active,
-.navigation-btn:active{
+.navigation-btn:active, 
+.navigation-btn a:active{
   box-shadow: 3px 3px 8px gray;
   transform: scale(.98);
   opacity: 0.7;
 }
 
+a #download:active{
+  box-shadow: 3px 3px 8px gray;
+  transform: scale(.98);
+  /* opacity: 0.7; */
+}
 .navigation-btn, 
 #main-Nav button{
   text-transform: uppercase;
@@ -363,8 +375,17 @@ main{
       line-height:10%;
       margin-bottom:0px;
     }
-    .gridWrapper div {
+    .gridWrapper div{
       width:90%
+    }
+    .gridWrapper div img{
+      align-items:center;
+      width: auto;
+      max-width:80vw;
+      padding:20px;
+      margin: 0 auto;
+      margin: 30px;
+      margin-bottom:20px;
     }
   }
 @media only screen and (max-width: 500px) {

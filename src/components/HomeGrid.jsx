@@ -11,8 +11,7 @@ export default function HomeGrid(){
     return(
         <div className = "gridWrapper">
             <div id="grid-about"><Link to ="/aboutme"><img src = {aboutMe}/></Link></div>
-            <div></div>
-            <div></div>
+       
             <div id="grid-projects"><Link to ="/projects"><img src = {projects}/></Link></div>
             <div><Link to ="/resume"><img src = {resume}/></Link></div>
             <div><Link to ="/contact-me"><img src = {contact}/></Link></div>

@@ -12,6 +12,7 @@ export default function Resume () {
             <button className="navigation-btn" onClick={BackToGrid}>Back to Grid</button>
             <div id="resume">
                 <h1>resume</h1>
+                <button id="download" onClick={window.location.href='https://docs.google.com/document/d/13YIf5aMn1krnkXWNOyJ6MBA08LfNljB-TeEyb88MelU/edit?usp=sharing'} className = "navigation-btn"> Download Resume Here!</button>
                 <h5>LOS ANGELES, CA  | YAELKAUF29@GMAIL.COM |  <a href="http://linkedin.com/in/yael-kaufman" target="_blank" alt="linkedin">LINKEDIN</a>  |  <a href="https://www.github.com/ykallday" target="_blank" alt="linkedin">GITHUB</a> </h5>
                 <br></br>
                 <h4 className="res-title">ABOUT ME:</h4>
@@ -36,7 +37,7 @@ export default function Resume () {
 </li>
                     <li>Used Adobe Creative Cloud to design and create digital marketing graphics for email, social marketing, and physical marketing collateral to increase brand awareness and drive revenue</li>
                     <li>Generated over $2 million in sales through high-impact email marketing campaigns, utilizing Adobe Photoshop along with Campaign Monitor to design, craft and distribute interactive emails to thousands of customers</li>
-                    <li>Increased Instagram following from 11,000 followers too 100,000 followers through custom content</li>
+                    <li>Increased Instagram following from 11,000 followers to 100,000 followers through custom content</li>
                     <li>Spearheaded and developed a comprehensive, quarterly digital catalog using Adobe Illustrator and dCatalog to better equip our sales team for success, increasing sales and developing a culture of cross collaboration</li>
                 </ul>
                 <h4 className = "res-title">EDUCATION:</h4>
