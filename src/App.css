@@ -382,7 +382,8 @@ main{
       text-align:left;
       margin-left:0%;
       line-height:10%;
-      margin-bottom:0px;
+      line-height:1.2em;
+      /* margin-bottom:0px; */
     }
     .gridWrapper div{
       width:90%
