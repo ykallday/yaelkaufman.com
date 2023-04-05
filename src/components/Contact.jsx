@@ -12,7 +12,7 @@ export default function Contact () {
         <div>
             <button className="navigation-btn" onClick={BackToGrid}>Back to Grid</button>
             <div id ="contact-page">
-                <h1>Contact Me</h1>
+                <h1>contact me</h1>
                     <div className = "contact-grid">
                         <a href="mailto:yaelkauf29@gmail.com" target="_blank"><div> <MdEmail size={25}/> SEND ME AN EMAIL</div></a>
                         <a href="https://www.linkedin.com/in/yael-kaufman" target="_blank"><div><FaLinkedin size={25}/> CONNECT WITH ME ON LINKEDIN</div></a>
