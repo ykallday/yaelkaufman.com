@@ -127,6 +127,7 @@ main{
 #resume h1, #about h1, #contact-page h1, #project-page h1{
   letter-spacing: .2em;
   font-weight:800;
+
 }
 
 .res-about{
@@ -252,12 +253,20 @@ main{
   transform: scale(.98);
   opacity: 0.7;
 }
-
-a #download:active{
-  box-shadow: 3px 3px 8px gray;
-  transform: scale(.98);
-  /* opacity: 0.7; */
+#download a{
+  text-decoration: none;
+  font-family:Manrope, sans-serif;
+  border-radius:10px;
+  scale:calc(1.1)
 }
+
+#download{
+  margin: 0 auto;
+  border-radius:10px;
+  border: 1px solid var(--md-sys-color-on-tertiary-container);
+  height:3em
+}
+
 .navigation-btn, 
 #main-Nav button{
   text-transform: uppercase;
@@ -347,7 +356,7 @@ a #download:active{
     #resume a:hover{
       background-color: var(--md-sys-color-primary);
       color: var(--md-sys-color-on-primary);
-      padding:3px;
+      padding:5px;
     }
     
     #resume .bullet{

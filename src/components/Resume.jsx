@@ -7,12 +7,13 @@ export default function Resume () {
         navigate('/');
     }
 
+
     return(
         <div>
             <button className="navigation-btn" onClick={BackToGrid}>Back to Grid</button>
             <div id="resume">
                 <h1>resume</h1>
-                <button id="download" onClick={window.location.href='https://docs.google.com/document/d/13YIf5aMn1krnkXWNOyJ6MBA08LfNljB-TeEyb88MelU/edit?usp=sharing'} className = "navigation-btn"> Download Resume Here!</button>
+                <button id="download"><a href="https://docs.google.com/document/d/13YIf5aMn1krnkXWNOyJ6MBA08LfNljB-TeEyb88MelU/edit?usp=sharing" target="_blank"> Download Resume Here!</a></button>
                 <h5>LOS ANGELES, CA  | YAELKAUF29@GMAIL.COM |  <a href="http://linkedin.com/in/yael-kaufman" target="_blank" alt="linkedin">LINKEDIN</a>  |  <a href="https://www.github.com/ykallday" target="_blank" alt="linkedin">GITHUB</a> </h5>
                 <br></br>
                 <h4 className="res-title">ABOUT ME:</h4>
