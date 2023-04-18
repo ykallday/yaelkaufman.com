@@ -2,6 +2,7 @@ import { useNavigate, Link } from "react-router-dom"
 import cc from '../assets/cc_homepagescreenshot.png'
 import bs from '../assets/bookstart.png'
 import ou from '../assets/orderup.png'
+import sp from '../assets/seasonpal.png'
 
 export default function (){
     let navigate = useNavigate();
@@ -15,6 +16,13 @@ export default function (){
             <div id="project-page">
                 <h1>projects</h1>
                 <div className="project-grid">
+                    <a href="https://seasonpal.netlify.app/" target="_blank">  
+                        <div className="project-card">
+                            <h2>SeasonPal</h2>
+                            <img src = {cc} width= "100%"/>
+                            <h5>A full-stack (Django/Python, React.js/Tailwind) application created to encourage seasonal eating. Still in development! </h5>
+                        </div>
+                    </a>
                     <a href="https://github.com/ykallday/Coping-Corner-Frontend" target="_blank">  
                         <div className="project-card">
                             <h2>Coping Corner</h2>
