@@ -19,7 +19,7 @@ export default function (){
                     <a href="https://seasonpal.netlify.app/" target="_blank">  
                         <div className="project-card">
                             <h2>SeasonPal</h2>
-                            <img src = {cc} width= "100%"/>
+                            <img src = {sp} width= "100%"/>
                             <h5>A full-stack (Django/Python, React.js/Tailwind) application created to encourage seasonal eating. Still in development! </h5>
                         </div>
                     </a>
