@@ -296,6 +296,48 @@ main{
 }
 
 
+#skills{
+  height: auto;
+  width:100vw;
+  background-color: var(--md-sys-color-primary-container);
+  opacity: .7;
+  padding: 5px;
+  margin-top:50px;
+  
+ 
+}
+.skill-header{
+  font-weight: 300;
+  margin-bottom:0px;
+  padding-left:3vw;
+  text-align:left;
+}
+.icons{
+  display:flex;
+  justify-content:flex-start;
+  width:100vw;
+  flex-wrap:wrap;
+  margin-top:1vw;
+  
+}
+.icon{
+  padding:1vh 3vw 0vh 3vw;
+  font-size: 5vw;
+  margin:5px;
+  margin-bottom:4vh;
+  height:auto;
+  width:auto; 
+}
+
+.skill-caption{
+  font-size:15px;
+  display:block;
+  font-weight:400;
+}
+
+
+
+
 /******BREAKPOINTS******/
 @media only screen and (max-width: 700px) {
   .navigation-btn{
