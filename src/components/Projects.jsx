@@ -1,8 +1,8 @@
 import { useNavigate, Link } from "react-router-dom"
-import cc from '../assets/cc_homepagescreenshot.png'
-import bs from '../assets/bookstart.png'
-import ou from '../assets/orderup.png'
-import sp from '../assets/seasonpal.png'
+import cc from '../assets/coping-corner-motion.gif'
+import bs from '../assets/CleanShot 2023-05-03 at 11.20.02.gif'
+import ou from '../assets/CleanShot 2023-05-04 at 14.12.58.gif'
+import sp from '../assets/CleanShot 2023-05-03 at 11.27.32.gif'
 
 export default function (){
     let navigate = useNavigate();
