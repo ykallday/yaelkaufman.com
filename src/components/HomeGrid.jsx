@@ -11,6 +11,8 @@ import {SiDjango, SiNodedotjs, SiTailwindcss, SiPostgresql, SiSequelize, SiAdobe
 export default function HomeGrid(){
     return(
         <div>
+            <h1 className="callOut">Digital Content & Marketing | Web Design | Frontend Development</h1>
+          
         <div className = "gridWrapper">
             <div id="grid-about"><Link to ="/aboutme"><img src = {aboutMe}/></Link></div>
             <div id="grid-projects"><Link to ="/projects"><img src = {projects}/></Link></div>

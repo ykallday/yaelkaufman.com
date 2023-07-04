@@ -171,13 +171,21 @@ main{
   margin-bottom:0px;
 }
 /*Contact-------*/
-.contact-grid{
+.contact-grid, .pre-grid{
   display:grid;
   grid-template-columns: repeat(2,50%);
   padding:20px;
   grid-gap:30px;
   justify-content:center;
 
+}
+
+.pre-grid a{
+  font-size:2vw;
+  background-color:white;
+  text-decoration:none;
+  color: var(--md-sys-color-tertiary);
+  border-radius:20px;
 }
 .contact-grid div{
   background-color:var(--md-sys-color-on-secondary);
@@ -210,9 +218,9 @@ main{
   grid-gap: 40px;
  
 }
-.project-grid div{
+.project-grid div, .digital-card{
   width:90%;
-  height:90%;
+  height:fit-content;
   opacity:1;
   background-color:rgba(255,255,255,.5);
   box-shadow: 1px 1px 2px gray;
@@ -223,7 +231,16 @@ main{
 
 .project-grid div:hover{
   border: 2px solid white;
-  scale: calc(1.1)
+  scale: calc(1.05)
+}
+
+.digital-card{
+  height:fit-content;
+
+}
+.digital-card img{
+  margin-bottom:20px;
+  padding-bottom:20px;
 }
 .project-grid a{
   text-decoration:none;
@@ -465,7 +482,7 @@ main{
  
      
     }
-    .project-grid div{
+    .project-grid div, .digital-card{
       width:90%;
       height:90%;
       opacity:1;
@@ -475,16 +492,21 @@ main{
       border-radius:30px;
       
     }
-    .contact-grid{
+    .contact-grid, .pre-grid{
       display:grid;
       grid-template-columns: 1fr;
       padding:20px;
       grid-gap:30px;
       justify-content:center;
+
+    }
+    .pre-grid a{
+      padding:20px;
+      font-size:10vw;
     }
     
- }
-
+  }
+ 
      
 
   
