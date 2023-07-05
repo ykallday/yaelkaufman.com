@@ -12,7 +12,7 @@ export default function AboutMe () {
             <div id="about">
                 <h1>Hey!</h1>
                 <h4>It's nice to meet you.</h4>
-                <h4 className = "res-about">My name is Yael, and I'm located in Los Angeles. I’m a digital marketer and full-stack software engineer focusing on front-end development with a background in psychology. I love to dream up, plan out, and execute projects - whether that be digital marketing content or software applications and websites. 
+                <h4 className = "res-about">My name is Yael, and I'm located in Los Angeles. I’m a digital marketer and full-stack software engineer focusing on front-end development with a background in psychology. I love to dream up, plan out, and execute projects from digital marketing campaigns / content to software applications and websites. I am fueled by seeing projects through to completion.
                 </h4>
                 <h3>Software Development</h3><h5 className = 'res-about'>I specialize in JavaScript, HTML/CSS and React, which, paired with my detail oriented approach to the creative process and my ability to learn quickly, make me an asset to any team. My incessant curiosity and appreciation for a problem that stumps me continually push me to work toward a world of efficient, beautiful websites and apps people enjoy using. </h5>
                 <h3>Digital Marketing & Content Design</h3>
